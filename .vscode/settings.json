@@ -1,3 +1,5 @@
 {
     "C_Cpp.errorSquiggles": "Enabled"
+    "terminal.integrated.fontFamily": "Menlo for Powerline",
+    // "terminal.integrated.fontSize": 12
 }

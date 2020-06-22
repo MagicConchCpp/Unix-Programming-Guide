@@ -2,7 +2,6 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <stdlib.h>
-#include <string.h>
 
 #define BUFFERSIZE 4096
 #define COPYMODE 0644
@@ -15,6 +14,11 @@ int main(int argc, char *argv[]) {
 
     if (argc != 3)  {
         fprintf(stderr, "usage: %s source destination\n", *argv);
+        exit(1);
+    }
+
+    if ( strcmp(argv[1], argv[2]) == 0 ) {
+        fprintf(stderr, "same file!\n");
         exit(1);
     }
 
